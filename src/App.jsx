@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import search from './assets/icons/search.svg'
 import { useStateContext } from './Context'
+import {BackgroundLayout} from './components'
 
 const App = () => {
 
@@ -35,6 +36,9 @@ const App = () => {
 
 
     </nav>
+    <BackgroundLayout/>
+    <main className='w-ful flex flex-wrap gap-8 py-4 px-[10%] items-center justify-center' ></main>
+    
     </div>
   
   )
