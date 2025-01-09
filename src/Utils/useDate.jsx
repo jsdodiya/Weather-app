@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
 export const useDate = () =>{
-    const locale ='em'
+    const locale ='en'
 
-    cosnt [today, setDate] = useState(new Date())
+    const [today, setDate] = useState(new Date())
 
     useEffect(() => {
         const timer = setInterval (() =>{
@@ -19,7 +19,7 @@ export const useDate = () =>{
 
     const date = `${day}, ${today.getDate()}, ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
 
-    const timw = today.toLocaleDateString(locale, {hour: 'numeric', hour12: true, minute: 'numeric'} )
+    const time = today.toLocaleDateString(locale, {hour: 'numeric', hour12: true, minute: 'numeric'} )
 
 
     return {
